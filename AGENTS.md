@@ -8,7 +8,7 @@
 - 網站：Walter Ho 個人品牌（CPA｜IT 稽核｜網絡安全顧問）
 - 型態：**一頁式靜態網站**（純 HTML/CSS，無 build 工具、無框架、無後端）
 - 部署：Cloudflare Pages（免費）
-- 語言：繁體中文（zh-Hant）為主
+- 語言：**先全英語（en）**；穩定後再以「每語言一個 HTML 檔」追加 ja／zh-Hant／zh-Hans（樣式共用 css/style.css）
 - 內容來源：vault `01-Projects/personal-website/`（Obsidian），**AI 不擅自編造內容**
 
 ## 二、HTML 規範
