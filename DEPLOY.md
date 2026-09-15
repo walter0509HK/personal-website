@@ -1,51 +1,51 @@
-# 部署流程（GitHub → Cloudflare Pages）
+# Deployment Runbook (GitHub → Cloudflare Pages)
 
-> 本專案決策（見 vault `Codex/Decision-Log.md`）：GitHub 只作原始碼管理，正式託管用 **Cloudflare Pages**。
-> 狀態：本機 git 已初始化（Codex 完成）；以下步驟需要帳號授權，由使用者執行（或提供授權後由 Codex 代跑）。
+> **Project decision** (see vault `Codex/Decision-Log.md`): GitHub is for source control only; production hosting uses **Cloudflare Pages**.
+> **Status**: local git has been initialised (done by Codex). The steps below require account authorisation — run them yourself, or grant access and Codex will run them.
 
-## 已完成（Codex，本機）
-- [x] `git init` ＋ `.gitignore`（.DS_Store／node_modules／.env 等）
-- [x] 初始 commit（git 身份為暫定值，提供真實電郵後會 amend）
+## Completed (Codex, local)
+- [x] `git init` + `.gitignore` (`.DS_Store` / `node_modules` / `.env`, etc.)
+- [x] Initial commit (git identity is provisional; will be amended once a real email is provided)
 
-## Step 1：GitHub 帳號授權（需使用者一次）
+## Step 1 — GitHub authorisation (one-off)
 ```bash
-brew install gh          # 已安裝則略過
-gh auth login            # 選 GitHub.com → HTTPS → 瀏覽器登入
+brew install gh          # skip if already installed
+gh auth login            # choose GitHub.com → HTTPS → sign in via browser
 ```
 
-## Step 2：建立 repo 並 push
+## Step 2 — Create repo and push
 ```bash
 cd ~/Documents/Codex/personal-website
 gh repo create personal-website --public --source=. --remote=origin --push
 ```
-（要私人 repo 就把 `--public` 改 `--private`）
+(Use `--private` instead of `--public` for a private repo.)
 
-## Step 3：Cloudflare Pages 部署
+## Step 3 — Cloudflare Pages deployment
 
-### 方式 A（推薦，符合原決策：連接 GitHub repo 自動部署）
-1. 註冊／登入 https://dash.cloudflare.com
-2. Workers & Pages → Create → Pages → **Connect to Git** → 選 `personal-website` repo
-3. Build settings：
-   - Framework preset：**None**
-   - Build command：（留空）
-   - Build output directory：**/**（或留空）
-4. Save and Deploy → 完成後得到 `https://<project>.pages.dev`
+### Option A — Connect the GitHub repo (recommended; matches the original decision)
+1. Sign up / sign in at https://dash.cloudflare.com
+2. Workers & Pages → Create → Pages → **Connect to Git** → select the `personal-website` repo
+3. Build settings:
+   - Framework preset: **None**
+   - Build command: *(leave empty)*
+   - Build output directory: **/** (or leave empty)
+4. Save and Deploy → you get `https://<project>.pages.dev`
 
-### 方式 B（wrangler CLI 直接上傳，不需連接 repo）
+### Option B — Deploy via wrangler CLI (no repo connection needed)
 ```bash
 npm install -g wrangler
-wrangler login                       # 瀏覽器登入 Cloudflare
+wrangler login                       # sign in to Cloudflare via browser
 wrangler pages project create personal-website
 wrangler pages deploy . --project-name personal-website
 ```
 
-## Step 4：網域（買域名後）
-- 在 Cloudflare 加網域 → DNS 加 **CNAME** 指向 `<project>.pages.dev`
-- 或直接在 Pages 專案「Custom domains」綁定，Cloudflare 自動處理
+## Step 4 — Custom domain (after purchasing one)
+- Add the domain in Cloudflare → add a **CNAME** pointing to `<project>.pages.dev`
+- Or bind it directly under the Pages project’s “Custom domains” — Cloudflare handles the rest
 
-## Step 5：驗證
-- 瀏覽 `https://<project>.pages.dev`，檢查手機／桌面版
-- DNS 生效最長 24 小時（Cloudflare 通常幾分鐘）
+## Step 5 — Verification
+- Browse `https://<project>.pages.dev` and check mobile / desktop layouts
+- DNS propagation can take up to 24 hours (Cloudflare is usually a few minutes)
 
-## 內容待補（使用者提供後填進 index.html）
-- 定位句、數字證明（年資／項目／客戶）、經歷表、專業電郵、頭像 `assets/profile.jpg`
+## Content still to be added (fill into `index.html` once provided)
+- Positioning statement, proof numbers (years / projects / clients), experience table, professional email, headshot at `assets/profile.jpg`

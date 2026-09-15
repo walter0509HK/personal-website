@@ -1,105 +1,157 @@
 # PRELAUNCH Checklist — Personal Website
 
-> 上線前逐項打勾的工作清單。邊做邊改勾。
-> 來源：Obsidian vault `01-Projects/personal-website/上線前必做Checklist.md`（2026-09-11 建立）
-> 相關：`AGENTS.md`（編碼標準）· `DEPLOY.md`（部署 runbook）
-> 標記：⛔ 等使用者｜🤖 Codex 可做｜👤 使用者決定／提供
+> Tick items off as you go.
+> **Source**: Obsidian vault `01-Projects/personal-website/上線前必做Checklist.md` (created 2026-09-11)
+> **Related**: `AGENTS.md` (coding standards) · `DEPLOY.md` (deployment runbook)
+> **Markers**: ⛔ blocked on user ｜ 🤖 Codex can do ｜ 👤 user decides / provides
 
 ---
 
-## A. 身份一致性（P0 — 唔做，AI 認唔到你）
+## A. Identity Consistency (P0 — without this, AI cannot recognise you)
 
-- [ ] 👤 正式姓名＝**Walter Liu**（確認）
-- [ ] 👤 網域定案：`walterliu.net`；決定 **apex** 或 **www** 為正（另一個 301）
-- [ ] 👤 註冊網域（`walterliu.com` 已被註冊，用 `.net`）
-- [ ] 🤖 `index.html`：`Walter Ho` → **`Walter Liu`**（title／h1／meta／footer）
-- [ ] 👤 LinkedIn bio 改 **Walter Liu** ＋加網站連結
-- [ ] 👤 GitHub profile bio 加 **Walter Liu** ＋網站連結
-- [ ] 👤 電郵：`walter668668@proton.me`（已記錄）
-- [ ] 🤖 全站姓名／專業／地區措辭一致（NAP 一致）
+- [ ] 👤 Legal display name = **Walter Liu** (confirmed)
+- [ ] 👤 Domain: `walterliu.net` — decide **apex** or **www** as canonical (redirect the other with 301)
+- [ ] 👤 Register the domain (`walterliu.com` is taken; using `.net`)
+- [ ] 🤖 `index.html`: `Walter Ho` → **`Walter Liu`** (title / h1 / meta / footer)
+- [ ] 👤 LinkedIn bio → **Walter Liu** + add website link
+- [ ] 👤 GitHub profile bio → **Walter Liu** + website link
+- [ ] 👤 Email: `walter668668@proton.me` (recorded)
+- [ ] 🤖 Consistent name / profession / location wording across the site (NAP consistency)
 
-## B. 內容（P0 — 冇內容，AI 冇嘢好引用）
+## B. Content (P0 — no content means nothing for AI to cite)
 
-- [ ] 👤 定位句（一句定義式）：`Walter Liu is a Hong Kong CPA and cybersecurity consultant specialising in…`
-- [ ] 👤 數字證明（年資／項目數／客戶數，可只寫行業）
-- [ ] 👤 經歷表（公司／職稱／年份；敏感可只寫職稱）
-- [ ] 👤 專業電郵（要公開的一個）
-- [ ] 👤 頭像 `assets/profile.jpg`（現用「WH」佔位）
-- [ ] 👤 服務項目 3–4 項（每項「定義式」描述）
-- [ ] 👤 FAQ 3–5 條（用客戶真實問法）
-- [ ] 👤 About 一段（背景＋資格＋理念）
-- [ ] 👤 資格驗證連結（HKICPA／ISACA／(ISC)²）
-- [ ] 👤 作品集清單（標題／類型／描述／連結）
+- [ ] 👤 Positioning statement (one defining sentence): `Walter Liu is a Hong Kong CPA and cybersecurity consultant specialising in…`
+- [ ] 👤 Proof numbers (years / project count / client count; industry only is fine)
+- [ ] 👤 Experience table (company / title / years; titles only if sensitive)
+- [ ] 👤 Public professional email
+- [ ] 👤 Headshot at `assets/profile.jpg` (currently a “WH” placeholder)
+- [ ] 👤 3–4 service items (each with a defining sentence)
+- [ ] 👤 3–5 FAQ entries (using real client questions)
+- [ ] 👤 About paragraph (background + credentials + rationale)
+- [ ] 👤 Credential verification links (HKICPA / ISACA / (ISC)²)
+- [ ] 👤 Portfolio list (title / type / description / link)
 
-> ⚠️ 鐵律：**AI 不編造內容**。未提供前一律留 `<!-- TODO -->` 佔位。
+> ⚠️ **Hard rule: AI must not fabricate content.** Leave `<!-- TODO -->` placeholders until provided.
 
-## C. 技術（P1）
+## C. Technical (P1)
 
-- [ ] 🤖 專案 build 成功（`npm run build` 無錯）
-- [ ] 🤖 每頁 `title` + `meta description` + `canonical` + Open Graph
-- [ ] 🤖 JSON-LD：`Person`（`hasCredential`／`sameAs`）＋`ProfessionalService`＋`FAQPage`
-- [ ] 🤖 語意 HTML：單一 `<h1>`、標題層級正確、`<img>` 有 `alt`
-- [ ] 🤖 響應式測試（手機／平板／桌面）
-- [ ] 🤖 內容不靠 JS 產生（靜態輸出）
-- [ ] 🤖 效能：圖片壓縮、字型避免版面跳動
-- [ ] 🤖 `404` 頁 + favicon
-- [ ] 🤖 全站連結檢查（0 死連）
+- [ ] 🤖 Project builds successfully (`npm run build` with no errors)
+- [ ] 🤖 Every page has `title` + `meta description` + `canonical` + Open Graph
+- [ ] 🤖 JSON-LD: `Person` (`hasCredential` / `sameAs`) + `ProfessionalService` + `FAQPage`
+- [ ] 🤖 Semantic HTML: single `<h1>`, correct heading hierarchy, every `<img>` has `alt`
+- [ ] 🤖 Responsive test (mobile / tablet / desktop)
+- [ ] 🤖 Content does not depend on JS (static output)
+- [ ] 🤖 Performance: image compression, font loading without layout shift
+- [ ] 🤖 `404` page + favicon
+- [ ] 🤖 Site-wide link check (0 broken links)
 
-## D. AI／搜尋可爬（P1）
+## C-2. Additional Technical Checks (added 2026-09-15)
 
-- [ ] 🤖 `robots.txt`：allow `OAI-SearchBot`／`Claude-SearchBot`／`Claude-User`／`PerplexityBot`／`Perplexity-User`；Training 類由使用者決定（建議先 `Disallow`）
-- [ ] 🤖 `sitemap.xml`（`@astrojs/sitemap` 自動生成）
-- [ ] 🤖 `llms.txt` — 低優先（除非發佈技術文件／工具）
-- [ ] 👤 可選：`Content-Signal: search=yes, ai-input=yes, ai-train=no`
-- [ ] 🤖 部署後驗證：瀏覽器開 `/robots.txt`、`/sitemap.xml` 睇得到
+### Performance (Lighthouse)
+- [ ] 👤 Run **Chrome DevTools → Lighthouse** (Desktop + Mobile)
+- [ ] 👤 Target scores:
+  | Category | Target |
+  |---|---|
+  | Performance | **≥ 90** |
+  | Accessibility | **≥ 90** |
+  | Best Practices | ≥ 90 |
+  | SEO | **100** |
 
-## E. 部署（P1）
+### HTML Validity
+- [ ] 👤 Validate the homepage with **W3C Validator** (https://validator.w3.org/)
+- [ ] 🤖 Fix all errors / warnings
 
-- [ ] 🤖 GitHub repo 最新、`main` 乾淨、已 push
-- [ ] 👤 Cloudflare Pages：Connect to Git（或 wrangler 上傳）
-- [ ] 👤 Build 設定：Framework **Astro**／Build command `npm run build`／Output `dist`
-- [ ] ⚠️ 👤 Dashboard 核對 **Search／Agent／Training** 三類設定（2026-09-15 新預設）
-- [ ] ⚠️ 👤 **切勿按「Block AI bots」一鍵**（會連 Googlebot／Applebot／BingBot 一起封）
-- [ ] 👤 綁自訂網域（apex ↔ www 301）
-- [ ] 🤖 驗證 HTTPS、手機版、所有頁面可開
+### Broken Links
+- [ ] 🤖 Site-wide link check (0 broken links)
+- [ ] 👤 Tool: **`lychee`** (`brew install lychee`)
+  ```bash
+  lychee --offline ./dist/**/*.html
+  ```
 
-## F. 上線後即刻做（P1）
+### Accessibility
+- [ ] 🤖 Every `<img>` has `alt`
+- [ ] 🤖 Colour contrast ≥ 4.5:1
+- [ ] 🤖 Keyboard navigable (sensible tab order)
+- [ ] 🤖 Correct heading hierarchy (single `<h1>`)
 
-- [ ] 👤 Bing Webmaster Tools 提交 sitemap（**最關鍵**，ChatGPT／Copilot 用 Bing 索引）
-- [ ] 👤 Google Search Console 提交 sitemap
-- [ ] 🤖 Rich Results Test 驗 JSON-LD
-- [ ] 🤖 實測 AI：問 ChatGPT／Claude／Gemini「Walter Liu 是誰、做什麼」
-- [ ] 👤 LinkedIn／GitHub 加網站連結（最快的外部連結）
-- [ ] 🤖 監察：Cloudflare logs（非 GA4）睇實際 bot
+### Image Optimisation
+- [ ] 🤖 Use **WebP / AVIF** (Astro’s built-in `<Image>`)
+- [ ] 🤖 Lazy load (everything below the fold)
+- [ ] 🤖 Set `width` / `height` (avoid CLS)
 
-## G. 明確唔做（反效果）
+## D. AI / Search Crawlability (P1)
 
-- [ ] ❌ 買連結／垃圾外鏈
-- [ ] ❌ 關鍵字堆砌
-- [ ] ❌ 為流量寫 100 篇空泛 blog
-- [ ] ❌ 誤按 Cloudflare「Block AI bots」一鍵
-- [ ] ❌ 把 `llms.txt` 當主力
+- [ ] 🤖 `robots.txt`: allow `OAI-SearchBot` / `Claude-SearchBot` / `Claude-User` / `PerplexityBot` / `Perplexity-User`; training crawlers are the user’s call (suggest `Disallow` initially)
+- [ ] 🤖 `sitemap.xml` (auto-generate with `@astrojs/sitemap`)
+- [ ] 🤖 `llms.txt` — low priority (only once technical docs / tools are published)
+- [ ] 👤 Optional: `Content-Signal: search=yes, ai-input=yes, ai-train=no`
+- [ ] 🤖 Post-deploy verification: open `/robots.txt` and `/sitemap.xml` in a browser
+
+### D-2. AI Visibility Audit (added 2026-09-15)
+> 🔧 Tool: **Firecrawl AI Visibility Audit (AEO + GEO)**
+> 🔗 https://www.firecrawl.dev/tools/ai-visibility-audit
+
+- [ ] 👤 Run it after every deploy — using the Cloudflare Pages preview URL (`*.pages.dev`)
+- [ ] 👤 Record the score (baseline)
+- [ ] 🤖 Review the 6 scored dimensions:
+  | # | Dimension | Our counterpart |
+  |---|---|---|
+  | 1 | AI crawler access | robots.txt |
+  | 2 | Structured data | JSON-LD |
+  | 3 | Content citability | Q&A-style content |
+  | 4 | Expertise & trust signals | credentials, experience |
+  | 5 | **Entity clarity** | name / domain consistency |
+  | 6 | llms.txt | llms.txt |
+- [ ] 🤖 Apply fixes → re-run → compare
+- ⚠️ It does **not** replace Lighthouse / W3C Validator / broken-link checks
+
+## E. Deployment (P1)
+
+- [ ] 🤖 GitHub repo up to date, `main` clean, pushed
+- [ ] 👤 Cloudflare Pages: Connect to Git (or upload via wrangler)
+- [ ] 👤 Build settings: Framework **Astro** / Build command `npm run build` / Output `dist`
+- [ ] ⚠️ 👤 Verify the **Search / Agent / Training** settings in the Dashboard (new defaults, 2026-09-15)
+- [ ] ⚠️ 👤 **Do NOT click “Block AI bots”** (it also blocks Googlebot / Applebot / BingBot)
+- [ ] 👤 Bind custom domain (apex ↔ www 301)
+- [ ] 🤖 Verify HTTPS, mobile version, all pages load
+
+## F. Immediately After Launch (P1)
+
+- [ ] 👤 Submit sitemap to **Bing Webmaster Tools** (**most important** — ChatGPT / Copilot use Bing’s index)
+- [ ] 👤 Submit sitemap to **Google Search Console**
+- [ ] 🤖 Validate JSON-LD with **Rich Results Test**
+- [ ] 🤖 Test in AI: ask ChatGPT / Claude / Gemini “Who is Walter Liu and what does he do?”
+- [ ] 👤 Add the website link on LinkedIn / GitHub (**fastest external links**)
+- [ ] 🤖 Monitor: **Cloudflare logs** (not GA4) for real bot traffic
+
+## G. Explicitly Avoid (counter-productive)
+
+- [ ] ❌ Buying links / spammy backlinks
+- [ ] ❌ Keyword stuffing
+- [ ] ❌ Writing 100 thin blog posts for traffic
+- [ ] ❌ Accidentally clicking Cloudflare’s “Block AI bots”
+- [ ] ❌ Treating `llms.txt` as the main strategy
 
 ---
 
-## 現況快照（2026-09-11）
+## Status Snapshot (2026-09-15)
 
-| 項目 | 狀態 |
+| Item | Status |
 |---|---|
-| GitHub repo | ✅ 已 push（`walter0509HK/personal-website`） |
-| gh 認證 | ✅ 已登入 |
-| vCard 版型＋英文版 | ✅ 已上 GitHub |
-| 真實內容 | ⛔ 未提供 |
-| 姓名／網域定案 | ⛔ 最優先（現時 `index.html` 仍寫 Walter Ho） |
-| Cloudflare 部署 | ⛔ 未做 |
-| Astro 重構 | ⏳ 未動工（使用者選 B） |
+| GitHub repo | ✅ Pushed (`walter0509HK/personal-website`) |
+| gh auth | ✅ Signed in |
+| vCard layout + English version | ✅ On GitHub |
+| Real content | ⛔ Not provided |
+| Name / domain decision | ✅ **Decided 2026-09-15** — Walter Liu / `walterliu.net` |
+| Cloudflare deployment | ⛔ Not done |
+| Astro refactor | ⏳ Not started (user chose option B) |
 
-## 執行順序
+## Execution Order
 
 ```
-① 確認姓名＋網域（apex/www）
-② Codex 做姓名統一（網站＋vault）
-③ 使用者提供內容
-④ Codex 開 Astro（骨架＋設計變數＋內容）
-⑤ 部署 Cloudflare＋提交索引（Bing 優先）
+① Confirm name + domain (apex/www)
+② Codex unifies the name (site + vault)
+③ User provides content
+④ Codex sets up Astro (skeleton + design tokens + content)
+⑤ Deploy to Cloudflare + submit to indexes (Bing first)
 ```
