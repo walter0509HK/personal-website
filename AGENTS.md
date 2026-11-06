@@ -56,7 +56,7 @@ git push origin main
 - After editing `index.html` / `style.css`, preview locally with `open index.html` before committing
 
 ## 6. Content Sourcing Rules (anti-fabrication)
-1. **All content comes from the vault**: `01-Projects/personal-website/00-專案簡介.md` + material provided by the user
+1. **All content comes from the vault**: `/Users/walter/Documents/Obsidian/SecondBrain/01-Projects/personal-website/00-Project-Overview.md` + material provided by the user
 2. Positioning statement, proof numbers, experience, email, headshot → **user provides**; AI must not invent
 3. If data is missing: leave a `<!-- TODO: ... -->` marker — **never fill in fake data**
 4. Professional credentials (CPA/CISSP, etc.) → follow `Codex/User-Profile.md` exactly; do not add or remove
@@ -68,6 +68,27 @@ git push origin main
 - Do it in one go, not many rounds (re-reading context burns tokens)
 - Gather all content first, then write (avoids back-and-forth)
 
-## 8. Relationship to Global Rules
+## 8. Change Requests and Bilingual Sync
+
+### 8.1 How the user briefs a change (5 fields)
+
+| Field | Content |
+|---|---|
+| **Location** | Section / file / element (e.g. `index.html` → Hero eyebrow) |
+| **Change** | What to do (replace / remove / add) |
+| **Data** | Text pasted inline, absolute file path, URL or screenshot |
+| **Scope** | EN only or EN + zh-Hant; single section or site-wide |
+| **Done** | Acceptance criteria |
+
+If any field is missing or ambiguous: ask **one** concise question before editing. Never invent content.
+
+### 8.2 Bilingual sync (mandatory)
+
+- `index.html` (English) and `zh-hant.html` (Traditional Chinese) are **one deliverable**.
+- Any content or structural change to the English page must be mirrored in `zh-hant.html` **in the same commit**, unless the user explicitly says "EN only".
+- Keep identical section order, anchors and IDs in both files.
+- After every edit: verify both files and report which sections changed.
+
+## 9. Relationship to Global Rules
 - This file is the **website coding standard**; the global `~/.codex/AGENTS.md` is the **AI working charter**
 - Both apply: the global one governs *how we collaborate*, this one governs *how this website is written*
