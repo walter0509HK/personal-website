@@ -1,175 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Walter Ho | CPA · IT Audit · Cybersecurity Consultant</title>
-<meta name="description" content="Walter Ho is a Hong Kong CPA and cybersecurity consultant offering accounting & tax, IT audit, cybersecurity assessment and AI governance services.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Walter Liu | IT Audit, Evidence Systems &amp; AI Assurance</title>
+  <meta name="description" content="Walter Liu works across IT audit, ITGC, ITAC, IPE, data and interface controls, cybersecurity and AI assurance.">
+  <meta name="theme-color" content="#07111f">
+  <meta property="og:title" content="Walter Liu | IT Audit, Evidence Systems &amp; AI Assurance">
+  <meta property="og:description" content="Audit methods, evidence systems and AI assurance from a Hong Kong perspective.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<!-- ============ HERO ============ -->
-<header class="hero" id="home">
-  <div class="hero-inner">
-    <div class="hero-avatar-wrap">
-      <span class="hero-avatar-fallback">WH</span>
-      <!-- TODO: Replace with your professional photo assets/profile.jpg -->
-      <img class="hero-avatar" src="assets/profile.jpg" alt="Walter Ho professional photo" onerror="this.style.display='none'">
+  <!-- ===== Header ===== -->
+  <header class="hero" id="top">
+    <div class="hero-orbit hero-orbit-one" aria-hidden="true"></div>
+    <div class="hero-orbit hero-orbit-two" aria-hidden="true"></div>
+    <div class="hero-orbit hero-orbit-three" aria-hidden="true"></div>
+
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">Hong Kong · IT Audit · Cybersecurity · AI Assurance</p>
+        <h1>Walter</h1>
+        <p class="hero-specialism">ITGC / ITAC / IPE</p>
+        <p class="hero-focus">Data &amp; Interface Controls · AI Assurance</p>
+        <p class="hero-intro">I test controls, trace evidence, and turn recurring audit work into reusable tools.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#notes">Explore the knowledge base</a>
+          <a class="button button-secondary" href="https://github.com/walter0509HK" rel="me">GitHub</a>
+        </div>
+      </div>
+
+      <aside class="hero-index" aria-label="Site focus">
+        <p class="index-label">Practice map</p>
+        <ol class="index-list">
+          <li><span>01</span>Audit methods</li>
+          <li><span>02</span>Evidence systems</li>
+          <li><span>03</span>AI assurance</li>
+        </ol>
+      </aside>
     </div>
-    <div class="hero-text">
-      <h1>Walter Ho</h1>
-      <p class="hero-title">CPA · AAISM · CISA · CISM · CDPSE · CISSP · CCSP</p>
-      <!-- TODO: Replace with your positioning statement -->
-      <p class="hero-tagline">Helping Hong Kong SMEs get accounting, IT audit &amp; cybersecurity sorted in one place</p>
+
+    <div class="container hero-footer">
+      <span>Practical notes and reusable tools</span>
+      <span>Updated <time datetime="2026-11-04">4 November 2026</time></span>
     </div>
-  </div>
-</header>
+  </header>
 
-<!-- ============ NAV ============ -->
-<nav class="navbar">
-  <a class="nav-item nav-home" href="#home"><span class="nav-ico">⌂</span>Home</a>
-  <a class="nav-item nav-about" href="#about"><span class="nav-ico">☰</span>About</a>
-  <a class="nav-item nav-services" href="#services"><span class="nav-ico">✦</span>Services</a>
-  <a class="nav-item nav-experience" href="#experience"><span class="nav-ico">◆</span>Experience</a>
-  <a class="nav-item nav-creds" href="#creds"><span class="nav-ico">★</span>Credentials</a>
-  <a class="nav-item nav-contact" href="#contact"><span class="nav-ico">✉</span>Contact</a>
-</nav>
+  <!-- ===== Navigation ===== -->
+  <nav class="navbar" aria-label="Primary navigation">
+    <div class="container navbar-inner">
+      <a class="brand" href="#top" aria-label="Walter, back to top">W<span>.</span></a>
+      <div class="nav-links">
+        <a href="#focus">Focus</a>
+        <a href="#notes">Notes</a>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="language-switch" aria-label="Language">
+        <span aria-current="page">EN</span>
+        <a href="zh-hant.html" lang="zh-Hant">繁中</a>
+      </div>
+    </div>
+  </nav>
 
-<main>
+  <main id="main">
+    <!-- ===== Focus ===== -->
+    <section class="section focus-section" id="focus">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">What I work on</p>
+          <h2>Controls are only useful when the evidence holds.</h2>
+          <p class="section-intro">The work sits between audit methodology, technical reality and the evidence a reviewer can actually verify.</p>
+        </div>
 
-<!-- ============ ABOUT ============ -->
-<section class="about" id="about">
-  <div class="container">
-    <div class="about-grid">
-      <div class="about-left">
-        <h2>Personal Brand · One-Person Company</h2>
-        <p class="about-sub">Hong Kong CPA · IT Audit · Cybersecurity · AI Governance</p>
-        <div class="features">
-          <div class="feature">
-            <span class="feat-ico">▣</span>
-            <div>
-              <h3>Accounting &amp; Tax</h3>
-              <p>Company tax filing, audit support and financial statement preparation (CPA qualification).</p>
-            </div>
+        <div class="focus-grid">
+          <article class="focus-card">
+            <p class="card-number">01</p>
+            <h3>Audit methods</h3>
+            <p>ITGC, ITAC, IPE and the control relationships that connect systems, transactions and financial reporting.</p>
+            <ul class="tag-list">
+              <li>ITGC</li>
+              <li>ITAC</li>
+              <li>IPE</li>
+              <li>Sampling</li>
+            </ul>
+          </article>
+
+          <article class="focus-card">
+            <p class="card-number">02</p>
+            <h3>Evidence systems</h3>
+            <p>Reusable workflows for document requests, populations, testing, findings, management responses and QA.</p>
+            <ul class="tag-list">
+              <li>DRL</li>
+              <li>Evidence</li>
+              <li>Findings</li>
+              <li>QA</li>
+            </ul>
+          </article>
+
+          <article class="focus-card">
+            <p class="card-number">03</p>
+            <h3>AI assurance</h3>
+            <p>Practical controls for AI agents, RAG, permissions, logging, model risk and deployment decisions.</p>
+            <ul class="tag-list">
+              <li>AIAIA</li>
+              <li>AI Agents</li>
+              <li>RAG</li>
+              <li>AI Governance</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Notes library ===== -->
+    <section class="section notes-section" id="notes">
+      <div class="container">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="section-kicker">Knowledge base</p>
+            <h2>Practical notes, built for reuse.</h2>
           </div>
-          <div class="feature">
-            <span class="feat-ico">▤</span>
+          <p class="section-intro">English and Traditional Chinese articles will be published here progressively. Each article separates source-supported facts from practical analysis.</p>
+        </div>
+
+        <div class="library">
+          <article class="library-row">
             <div>
-              <h3>IT Audit &amp; Risk</h3>
-              <p>IT general &amp; application control audits, risk assessment and compliance reviews.</p>
+              <p class="library-index">A</p>
+              <h3>Audit &amp; Controls</h3>
             </div>
+            <p>Access, change management, operations, databases, privileged access, SOD, interfaces and application controls.</p>
+            <span class="status">Editorial library in development</span>
+          </article>
+
+          <article class="library-row">
+            <div>
+              <p class="library-index">B</p>
+              <h3>Reports &amp; Evidence</h3>
+            </div>
+            <p>PIA, SRAA, ITGC and ITAC reports, GL20 / CRAF, CICS, AIAIA, DRLs and quality gates.</p>
+            <span class="status">Editorial library in development</span>
+          </article>
+
+          <article class="library-row">
+            <div>
+              <p class="library-index">C</p>
+              <h3>AI Assurance</h3>
+            </div>
+            <p>AI governance, agent controls, RAG security, AI logging, permissions and emerging threats.</p>
+            <span class="status">Editorial library in development</span>
+          </article>
+
+          <article class="library-row">
+            <div>
+              <p class="library-index">D</p>
+              <h3>Tools &amp; Workflows</h3>
+            </div>
+            <p>Obsidian, Excel, Burp Suite, Nessus, Python, AI agents and practical automation patterns.</p>
+            <span class="status">Editorial library in development</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Work ===== -->
+    <section class="section work-section" id="work">
+      <div class="container work-grid">
+        <div>
+          <p class="section-kicker">Work model</p>
+          <h2>GitHub is the record. This site is the guide.</h2>
+          <p class="section-intro">Individual repositories hold the full project record: problem, method, demo, verification, limitations and version. This website curates the same work for clients, hiring teams and technical readers.</p>
+        </div>
+
+        <div class="work-links">
+          <a class="work-link" href="https://github.com/walter0509HK" rel="me">
+            <span>
+              <small>Code and project record</small>
+              GitHub profile
+            </span>
+            <span aria-hidden="true">↗</span>
+          </a>
+
+          <div class="work-link work-link-muted">
+            <span>
+              <small>Next publication layer</small>
+              Project case studies
+            </span>
+            <span>In preparation</span>
           </div>
-          <div class="feature">
-            <span class="feat-ico">◈</span>
-            <div>
-              <h3>AI Governance &amp; Security</h3>
-              <p>AI governance frameworks, risk assessment, privacy and compliance (CDPSE).</p>
-            </div>
+
+          <div class="work-link work-link-muted">
+            <span>
+              <small>Reusable resources</small>
+              Checklists and templates
+            </span>
+            <span>In preparation</span>
           </div>
         </div>
       </div>
-      <aside class="profile-card">
-        <h3>Personal Info</h3>
-        <ul class="profile-list">
-          <li><span class="plabel">Name</span><span>Walter Ho</span></li>
-          <li><span class="plabel">Profession</span><span>CPA · IT Audit · Cybersecurity</span></li>
-          <li><span class="plabel">Location</span><span>Hong Kong</span></li>
-          <li><span class="plabel">Email</span><span><!-- TODO: Replace with your professional email -->hello@yourdomain.com</span></li>
-        </ul>
-      </aside>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- ============ SERVICES ============ -->
-<section class="services" id="services">
-  <div class="container">
-    <h2>Services</h2>
-    <div class="service-grid">
-      <article class="service-card">
-        <span class="svc-ico">▣</span>
-        <h3>Accounting &amp; Tax</h3>
-        <p>Company tax filing, audit support and financial statement preparation.</p>
-      </article>
-      <article class="service-card">
-        <span class="svc-ico">▤</span>
-        <h3>IT Audit &amp; Risk</h3>
-        <p>IT general control audits, application control audits, risk assessment &amp; compliance.</p>
-      </article>
-      <article class="service-card">
-        <span class="svc-ico">◈</span>
-        <h3>Cybersecurity Assessment</h3>
-        <p>Security audits, vulnerability assessments and security framework adoption.</p>
-      </article>
-      <article class="service-card">
-        <span class="svc-ico">✦</span>
-        <h3>AI Governance &amp; Security</h3>
-        <p>AI governance frameworks, risk assessment, privacy and compliance.</p>
-      </article>
-    </div>
-  </div>
-</section>
+    <!-- ===== About and credentials ===== -->
+    <section class="section about-section" id="about">
+      <div class="container about-grid">
+        <div>
+          <p class="section-kicker">About</p>
+          <h2>Audit discipline, translated into usable systems.</h2>
+        </div>
 
-<!-- ============ EXPERIENCE ============ -->
-<section class="experience" id="experience">
-  <div class="container">
-    <h2>Professional Experience</h2>
-    <div class="exp-grid">
-      <div>
-        <h3>Work Experience</h3>
-        <!-- TODO: Replace with your roles (company, title, years) -->
-        <ul class="timeline">
-          <li><strong>Current</strong> — Title | Company (year–present)</li>
-          <li><strong>Previous</strong> — Title | Company (year–year)</li>
-        </ul>
+        <div class="about-copy">
+          <p>Walter Liu is a Hong Kong CPA and IT risk professional working across IT audit, cybersecurity and AI assurance.</p>
+          <p>His work focuses on control testing, evidence quality and turning repeated assurance problems into clear, reusable workflows.</p>
+
+          <h3>Professional credentials</h3>
+          <ul class="credential-list" aria-label="Professional credentials">
+            <li>CPA</li>
+            <li>AAISM</li>
+            <li>CISA</li>
+            <li>CISM</li>
+            <li>CDPSE</li>
+            <li>CISSP</li>
+            <li>CCSP</li>
+          </ul>
+        </div>
       </div>
+    </section>
+  </main>
+
+  <!-- ===== Contact ===== -->
+  <footer class="footer" id="contact">
+    <div class="container footer-grid">
       <div>
-        <h3>Professional Credentials</h3>
-        <ul class="creds">
-          <li>Certified Public Accountant (CPA)</li>
-          <li>Certified Information Systems Auditor (CISA)</li>
-          <li>Certified Information Security Manager (CISM)</li>
-          <li>Certified Data Privacy Solutions Engineer (CDPSE)</li>
-          <li>Certified Information Systems Security Professional (CISSP)</li>
-          <li>Certified Cloud Security Professional (CCSP)</li>
-          <li>AAISM</li>
-        </ul>
+        <p class="section-kicker">Contact</p>
+        <h2>For assurance, audit and AI governance work.</h2>
+      </div>
+
+      <div class="contact-list">
+        <p>
+          <span>Email</span>
+          <strong>walter668668@proton.me</strong>
+        </p>
+        <p>
+          <span>GitHub</span>
+          <a href="https://github.com/walter0509HK" rel="me">github.com/walter0509HK</a>
+        </p>
+        <!-- TODO: Add LINE and WhatsApp links after the final URLs and QR image are supplied. -->
       </div>
     </div>
-  </div>
-</section>
 
-<!-- ============ CREDENTIALS ============ -->
-<section class="skills" id="creds">
-  <div class="container">
-    <h2>Professional Credentials</h2>
-    <div class="skill-chips">
-      <span class="chip">CPA</span>
-      <span class="chip">AAISM</span>
-      <span class="chip">CISA</span>
-      <span class="chip">CISM</span>
-      <span class="chip">CDPSE</span>
-      <span class="chip">CISSP</span>
-      <span class="chip">CCSP</span>
+    <div class="container footer-bottom">
+      <span>© 2026 Walter Liu</span>
+      <span>Built for clarity, evidence and maintainability.</span>
     </div>
-  </div>
-</section>
+  </footer>
 
-</main>
-
-<!-- ============ CONTACT ============ -->
-<footer id="contact">
-  <div class="container">
-    <h2>Contact Me</h2>
-    <!-- TODO: Replace with your professional email -->
-    <p><a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a></p>
-    <p class="copy">© 2026 Walter Ho · English</p>
-  </div>
-</footer>
-
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Walter Liu",
+    "jobTitle": "IT Audit and AI Assurance Professional",
+    "knowsAbout": [
+      "IT audit",
+      "IT general controls",
+      "IT application controls",
+      "information produced by the entity",
+      "cybersecurity",
+      "AI governance",
+      "AI assurance"
+    ],
+    "sameAs": [
+      "https://github.com/walter0509HK"
+    ]
+  }
+  </script>
 </body>
 </html>

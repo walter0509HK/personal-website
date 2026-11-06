@@ -1,0 +1,32 @@
+# Walter Liu
+
+> Walter Liu works across IT audit, ITGC, ITAC, IPE, data and interface
+> controls, cybersecurity, AI governance and AI assurance.
+
+Walter tests controls, traces evidence and turns recurring audit work into
+reusable tools and practical assurance methods.
+
+## Primary pages
+
+- [English homepage](/index.html): Professional focus, knowledge library,
+  GitHub work model and contact information.
+- [Traditional Chinese homepage](/zh-hant.html): Traditional Chinese version of
+  the same professional profile and knowledge-library structure.
+
+## Current focus
+
+- Audit methods: ITGC, ITAC, IPE and sampling.
+- Evidence systems: DRLs, populations, testing, findings, management responses
+  and quality assurance.
+- AI assurance: AI agents, RAG, permissions, logging, model risk and governance.
+
+## Source and limitations
+
+Articles and templates are being published progressively. Content is not legal
+advice, a regulatory opinion or a substitute for client-specific professional
+judgement.
+
+## Contact
+
+- GitHub: https://github.com/walter0509HK
+- Email: walter668668@proton.me

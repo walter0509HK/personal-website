@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Walter Liu｜IT 審計、證據系統與 AI Assurance</title>
+  <meta name="description" content="Walter Liu 專注 IT 審計、ITGC、ITAC、IPE、數據及接口控制、網絡安全與 AI Assurance。">
+  <meta name="theme-color" content="#07111f">
+  <meta property="og:title" content="Walter Liu｜IT 審計、證據系統與 AI Assurance">
+  <meta property="og:description" content="從香港實務角度整理審計方法、證據系統與 AI Assurance。">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳至主要內容</a>
+
+  <!-- ===== Header ===== -->
+  <header class="hero" id="top">
+    <div class="hero-orbit hero-orbit-one" aria-hidden="true"></div>
+    <div class="hero-orbit hero-orbit-two" aria-hidden="true"></div>
+    <div class="hero-orbit hero-orbit-three" aria-hidden="true"></div>
+
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">香港 · IT 審計 · 網絡安全 · AI Assurance</p>
+        <h1>Walter</h1>
+        <p class="hero-specialism">ITGC / ITAC / IPE</p>
+        <p class="hero-focus">數據及接口控制 · AI Assurance</p>
+        <p class="hero-intro">測試控制、追蹤證據，並把重複出現的審計問題轉化為可重用工具。</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#notes">瀏覽知識庫</a>
+          <a class="button button-secondary" href="https://github.com/walter0509HK" rel="me">GitHub</a>
+        </div>
+      </div>
+
+      <aside class="hero-index" aria-label="網站重點">
+        <p class="index-label">實務範圍</p>
+        <ol class="index-list">
+          <li><span>01</span>審計方法</li>
+          <li><span>02</span>證據系統</li>
+          <li><span>03</span>AI Assurance</li>
+        </ol>
+      </aside>
+    </div>
+
+    <div class="container hero-footer">
+      <span>實務筆記與可重用工具</span>
+      <span>更新於 <time datetime="2026-11-04">2026 年 11 月 4 日</time></span>
+    </div>
+  </header>
+
+  <!-- ===== Navigation ===== -->
+  <nav class="navbar" aria-label="主要導覽">
+    <div class="container navbar-inner">
+      <a class="brand" href="#top" aria-label="Walter，返回頁首">W<span>.</span></a>
+      <div class="nav-links">
+        <a href="#focus">範疇</a>
+        <a href="#notes">筆記</a>
+        <a href="#work">作品</a>
+        <a href="#about">關於</a>
+        <a href="#contact">聯絡</a>
+      </div>
+      <div class="language-switch" aria-label="語言">
+        <a href="index.html" lang="en">EN</a>
+        <span aria-current="page">繁中</span>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+    <!-- ===== Focus ===== -->
+    <section class="section focus-section" id="focus">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">工作重點</p>
+          <h2>控制只有經得起證據驗證，才有實際價值。</h2>
+          <p class="section-intro">工作位於審計方法、技術現實，以及覆核者真正可以驗證的證據之間。</p>
+        </div>
+
+        <div class="focus-grid">
+          <article class="focus-card">
+            <p class="card-number">01</p>
+            <h3>審計方法</h3>
+            <p>ITGC、ITAC、IPE，以及連接系統、交易與財務報告的控制關係。</p>
+            <ul class="tag-list">
+              <li>ITGC</li>
+              <li>ITAC</li>
+              <li>IPE</li>
+              <li>抽樣</li>
+            </ul>
+          </article>
+
+          <article class="focus-card">
+            <p class="card-number">02</p>
+            <h3>證據系統</h3>
+            <p>涵蓋資料索取、population、測試、findings、管理層回應及 QA 的可重用流程。</p>
+            <ul class="tag-list">
+              <li>DRL</li>
+              <li>證據</li>
+              <li>Findings</li>
+              <li>QA</li>
+            </ul>
+          </article>
+
+          <article class="focus-card">
+            <p class="card-number">03</p>
+            <h3>AI Assurance</h3>
+            <p>針對 AI agents、RAG、權限、日誌、模型風險及部署決策的實務控制。</p>
+            <ul class="tag-list">
+              <li>AIAIA</li>
+              <li>AI Agents</li>
+              <li>RAG</li>
+              <li>AI 治理</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Notes library ===== -->
+    <section class="section notes-section" id="notes">
+      <div class="container">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="section-kicker">知識庫</p>
+            <h2>為重用而寫的實務筆記。</h2>
+          </div>
+          <p class="section-intro">英文及繁體中文文章會逐步發佈。每篇文章會分開「來源支持的事實」與「實務分析」。</p>
+        </div>
+
+        <div class="library">
+          <article class="library-row">
+            <div>
+              <p class="library-index">A</p>
+              <h3>審計與控制</h3>
+            </div>
+            <p>存取、變更管理、運維、數據庫、特權帳號、SOD、接口及應用控制。</p>
+            <span class="status">內容庫建置中</span>
+          </article>
+
+          <article class="library-row">
+            <div>
+              <p class="library-index">B</p>
+              <h3>報告與證據</h3>
+            </div>
+            <p>PIA、SRAA、ITGC／ITAC 報告、GL20／CRAF、CICS、AIAIA、DRL 及 quality gate。</p>
+            <span class="status">內容庫建置中</span>
+          </article>
+
+          <article class="library-row">
+            <div>
+              <p class="library-index">C</p>
+              <h3>AI Assurance</h3>
+            </div>
+            <p>AI 治理、agent controls、RAG security、AI logging、權限及新興威脅。</p>
+            <span class="status">內容庫建置中</span>
+          </article>
+
+          <article class="library-row">
+            <div>
+              <p class="library-index">D</p>
+              <h3>工具與流程</h3>
+            </div>
+            <p>Obsidian、Excel、Burp Suite、Nessus、Python、AI agents 及實務自動化模式。</p>
+            <span class="status">內容庫建置中</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Work ===== -->
+    <section class="section work-section" id="work">
+      <div class="container work-grid">
+        <div>
+          <p class="section-kicker">作品模式</p>
+          <h2>GitHub 是紀錄，網站是入口。</h2>
+          <p class="section-intro">每個 repository 保存完整項目紀錄，包括問題、方法、demo、驗證方式、限制及版本。網站把同一批作品按客戶、招聘及技術讀者的需要重新整理。</p>
+        </div>
+
+        <div class="work-links">
+          <a class="work-link" href="https://github.com/walter0509HK" rel="me">
+            <span>
+              <small>程式及項目紀錄</small>
+              GitHub Profile
+            </span>
+            <span aria-hidden="true">↗</span>
+          </a>
+
+          <div class="work-link work-link-muted">
+            <span>
+              <small>下一層發佈內容</small>
+              項目案例
+            </span>
+            <span>準備中</span>
+          </div>
+
+          <div class="work-link work-link-muted">
+            <span>
+              <small>可重用資源</small>
+              Checklists 及 templates
+            </span>
+            <span>準備中</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== About and credentials ===== -->
+    <section class="section about-section" id="about">
+      <div class="container about-grid">
+        <div>
+          <p class="section-kicker">關於</p>
+          <h2>把審計紀律轉化為可運用的系統。</h2>
+        </div>
+
+        <div class="about-copy">
+          <p>Walter Liu 是香港 CPA 及 IT risk professional，工作涵蓋 IT 審計、網絡安全及 AI Assurance。</p>
+          <p>工作重點包括控制測試、證據質素，以及把重複出現的 assurance 問題轉化為清晰、可重用的工作流程。</p>
+
+          <h3>專業資格</h3>
+          <ul class="credential-list" aria-label="專業資格">
+            <li>CPA</li>
+            <li>AAISM</li>
+            <li>CISA</li>
+            <li>CISM</li>
+            <li>CDPSE</li>
+            <li>CISSP</li>
+            <li>CCSP</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Contact ===== -->
+  <footer class="footer" id="contact">
+    <div class="container footer-grid">
+      <div>
+        <p class="section-kicker">聯絡</p>
+        <h2>關於 assurance、audit 及 AI governance 工作。</h2>
+      </div>
+
+      <div class="contact-list">
+        <p>
+          <span>Email</span>
+          <strong>walter668668@proton.me</strong>
+        </p>
+        <p>
+          <span>GitHub</span>
+          <a href="https://github.com/walter0509HK" rel="me">github.com/walter0509HK</a>
+        </p>
+        <!-- TODO: Add LINE and WhatsApp links after the final URLs and QR image are supplied. -->
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© 2026 Walter Liu</span>
+      <span>以清晰、證據及可維護性為先。</span>
+    </div>
+  </footer>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Walter Liu",
+    "jobTitle": "IT Audit and AI Assurance Professional",
+    "knowsAbout": [
+      "IT audit",
+      "IT general controls",
+      "IT application controls",
+      "information produced by the entity",
+      "cybersecurity",
+      "AI governance",
+      "AI assurance"
+    ],
+    "sameAs": [
+      "https://github.com/walter0509HK"
+    ]
+  }
+  </script>
+</body>
+</html>
